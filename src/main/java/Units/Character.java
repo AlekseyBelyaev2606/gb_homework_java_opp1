@@ -1,8 +1,11 @@
-public abstract class Character {
+package Units;
+
+public abstract class Character implements TheGameInterface {
     public int health;
     public int power;
     public int speed;
     public int magic;
+    public String type;
 
     public int movement(int speed, int move){
         int tempMove = move * speed;
@@ -15,4 +18,6 @@ public abstract class Character {
         this.speed = speed;
         this.magic = magic;
     }
+
+
 }
