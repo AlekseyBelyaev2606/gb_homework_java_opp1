@@ -13,6 +13,8 @@ import java.util.Random;
 public class Main {
     public static void main(String[] args) {
         Random random = new Random();
+
+
         int len = 10;
         ArrayList<Character> team = new ArrayList<>();
         for (int i = 0; i < len; i++) {
@@ -20,6 +22,7 @@ public class Main {
             switch (temp) {
                 case 1:
                     team.add(new Outlaw());
+
                     break;
                 case 2:
                     team.add(new Peasant());
