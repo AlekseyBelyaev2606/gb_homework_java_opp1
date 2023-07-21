@@ -4,14 +4,16 @@ import java.util.Random;
 
 public abstract class Knight extends Character {
     int hit;
+
+    public Knight(int health, int power, int speed, int magic, int x, int y) {
+        super(health, power, speed, magic, x, y);
+    }
+
     public int getDamage(int power, int hit){
         int tempHit = (power + hit) * new Random().nextInt(5);
         return tempHit;
     }
-    public Knight(int health, int power, int speed, int magic) {
-        super(health, power, speed, magic);
-        type = "Рыцарь";
-    }
+
 
 
 
